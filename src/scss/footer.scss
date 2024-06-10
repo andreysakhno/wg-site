@@ -1,0 +1,167 @@
+//====================================================================================================
+.footer {
+   background: $accentColorBlue $gradient;
+   color: #fff;
+   // .footer__container
+   &__container {      
+      padding-top: rem(15);
+      padding-bottom: rem(20);
+      
+   }
+   // .footer__top
+   &__top {
+      display: flex;      
+      justify-content: space-between;
+      align-items: center;
+      gap: rem(30);
+      @media (max-width:$tablet){
+         flex-direction: column;
+      }
+      &:not(:last-child) {
+         margin-bottom: rem(30);
+      }
+   }
+   // .footer__logo
+   &__logo {
+      img {
+         @include adaptiveValue("height", 75, 50, 0, 1440, 768);
+      }
+      @media (max-width:$tablet) {
+         display: none;;
+      }
+   }
+   // .footer__menu
+   &__menu {}
+    // .footer__menu-body
+   &__menu-body {}
+   // .footer__menu-list
+   &__menu-list {
+      display: flex;
+      justify-content: flex-end;
+      flex-wrap: wrap;
+      row-gap: rem(10);
+		@include adaptiveValue("column-gap", 33, 15, 0, 1440, 992);
+      @media (max-width:$tablet) {
+         justify-content: center;
+      }
+   }
+   // .footer__menu-item
+   &__menu-item {
+      text-align: right;
+   }
+   // .footer__menu-link
+   &__menu-link {
+      position: relative;
+      font-size: rem(18);
+      line-height: math.div(20, 18);
+		transition: color 0.3s ease 0s;
+		@media (min-width:$tablet){
+			font-size: rem(20);
+			line-height: math.div(22, 20);			
+		}
+		@media (min-width:$pc) {
+			font-size: rem(22);
+			line-height: math.div(24, 22);
+		}
+      &::after {
+			content: '';
+			display: block;
+			position: absolute;
+			right: 0;
+			bottom: -3px;
+			width: 0;
+			height: rem(1);
+			background-color: #fff;
+			transition: width 0.3s ease 0s;
+		}		
+		@media (any-hover: hover) {
+			&:hover{
+				&::after {
+					content: '';					
+					left: 0;
+					width: 100%;
+				}
+			}			
+		}      
+   }
+   
+   // .footer__bottom
+   &__bottom {
+      display: flex;
+      justify-content: space-between;
+      gap: rem(30);
+      &:not(:last-child) {
+         margin-bottom: rem(30);
+      }
+      @media (max-width:$mobile){
+         flex-direction: column;
+         align-items: center;     
+      }
+   }
+   
+   // .footer__social
+   &__socials {
+      display: flex;
+      align-items: center;
+      gap: rem(20);
+      font-size: rem(25);
+   }
+   // .footer__social-icon
+   &__social-link {
+      transition: color 0.3s ease 0s;
+      @media (any-hover: hover){
+         &:hover {
+            color: #c4c4c4;
+         }
+      }
+   }
+   // .footer__copyright   
+   &__copyright {
+      font-size: rem(14);
+      text-align: center;     
+   }
+}
+//====================================================================================================
+
+//========================================================================================================================================================
+.contacts-list {
+
+   // .contacts-list__list
+   &__list {}
+
+   // .contacts-list__item
+   &__item {
+      &:not(:last-child) {
+         margin-bottom: rem(15);
+      }
+   }
+
+   // .contacts-list__link
+   &__link {
+      display: flex;
+      align-items: center;
+      column-gap: rem(10);
+      transition: color 0.3s ease 0s;
+
+      @media (max-width:$mobile) {
+         justify-content: center;
+         text-align: center;
+         row-gap: rem(15);
+      }
+
+      @media (any-hover: hover) {
+         &:hover {
+            color: #c4c4c4;
+         }
+      }
+   }
+
+   // .contacts-list__icon
+   &__icon {
+      width: rem(18);
+
+      @media (max-width: em(340)) {
+         display: none;
+      }
+   }
+}

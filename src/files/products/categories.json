@@ -1,0 +1,232 @@
+[
+   {
+      "id": 3,
+      "slug": "acrylic",
+      "name": "Акрили",
+      "title": "Акрилові покриття",
+      "lft": 2,
+      "rgt": 7,
+      "depth": 1,
+      "children": [
+         {
+         "id": 13,
+         "slug": "acrylic-solvent-borne",
+         "name": "на основі розчинників",
+         "title": "Акрилові покриття на основі розчинників",
+         "lft": 3,
+         "rgt": 4,
+         "depth": 2
+         },
+         {
+         "id": 12,
+         "slug": "acrylic-water-borne",
+         "name": "на водній основі",
+         "title": "Акрилові покриття на водній основі",
+         "lft": 5,
+         "rgt": 6,
+         "depth": 2
+         }
+      ]
+   },
+   {
+      "id": 2,
+      "slug": "alkyd",
+      "name": "Алкіди",
+      "title": "Алкідні покриття",
+      "lft": 8,
+      "rgt": 9,
+      "depth": 1,
+      "children": []
+   },
+   {
+      "id": 4,
+      "slug": "epoxy",
+      "name": "Епоксиди",
+      "title": "Епоксидні покриття",
+      "lft": 10,
+      "rgt": 21,
+      "depth": 1,
+      "children": [
+         {
+         "id": 20,
+         "slug": "polyamide-epoxy",
+         "name": "поліаміди",
+         "title": "Епоксидні поліамідні покриття",
+         "lft": 11,
+         "rgt": 12,
+         "depth": 2
+         },
+         {
+         "id": 21,
+         "slug": "modified-epoxy",
+         "name": "модифіковані",
+         "title": "Епоксидні модифіковані покриття",
+         "lft": 13,
+         "rgt": 14,
+         "depth": 2
+         },
+         {
+         "id": 14,
+         "slug": "epoxy-novolac",
+         "name": "novolac",
+         "title": "Епоксидні novolac покриття",
+         "lft": 15,
+         "rgt": 16,
+         "depth": 2
+         },
+         {
+         "id": 16,
+         "slug": "solvent-free-epoxy",
+         "name": "без розчинників",
+         "title": "Епоксидні покриття без розчинників",
+         "lft": 17,
+         "rgt": 18,
+         "depth": 2
+         },
+         {
+         "id": 15,
+         "slug": "epoxy-polysulfide",
+         "name": "полісульфіди",
+         "title": "Епоксидні полісульфідні покриття",
+         "lft": 19,
+         "rgt": 20,
+         "depth": 2
+         }
+      ]
+   },
+   {
+      "id": 5,
+      "slug": "polyurethanes",
+      "name": "Поліуретани",
+      "title": "Поліуретанові покриття",
+      "lft": 22,
+      "rgt": 31,
+      "depth": 1,
+      "children": [
+         {
+         "id": 17,
+         "slug": "one-pack-polyurethanes",
+         "name": "1-о компонентні",
+         "title": "1-о компонентні поліуретанові покриття",
+         "lft": 23,
+         "rgt": 24,
+         "depth": 2
+         },
+         {
+         "id": 18,
+         "slug": "modified-polyurethanes",
+         "name": "2-о компонентні (модифіковані)",
+         "title": "2-о компонентні модифіковані поліуретанові покриття",
+         "lft": 25,
+         "rgt": 26,
+         "depth": 2
+         },
+         {
+         "id": 19,
+         "slug": "aliphatic-polyurethanes",
+         "name": "2-о компонентні (аліфатичні)",
+         "title": "2-о компонентні аліфатичні поліуретанові покриття",
+         "lft": 27,
+         "rgt": 28,
+         "depth": 2
+         },
+         {
+         "id": 23,
+         "slug": "solvent-free-polyurethanes",
+         "name": "без розчинників",
+         "title": "Поліуретанові покриття без розчинників",
+         "lft": 29,
+         "rgt": 30,
+         "depth": 2
+         }
+      ]
+   },
+   {
+      "id": 6,
+      "slug": "high-solids-coatings",
+      "name": "Товстошарові без розчинників",
+      "title": "Товстошарові покриття без розчинників",
+      "lft": 32,
+      "rgt": 39,
+      "depth": 1,
+      "children": [
+         {
+         "id": 25,
+         "slug": "polyurea",
+         "name": "поліурея (polyurea)",
+         "title": "Покриття на основі поліуреї",
+         "lft": 33,
+         "rgt": 34,
+         "depth": 2
+         },
+         {
+         "id": 22,
+         "slug": "high-solids-high-build-polyurethanes",
+         "name": "поліуретани",
+         "title": "Поліуретанові товстошарові покриття без розчинників",
+         "lft": 35,
+         "rgt": 36,
+         "depth": 2
+         },
+         {
+         "id": 24,
+         "slug": "high-solids-high-build-epoxy",
+         "name": "епоксиди",
+         "title": "Товстошарові епоксидні покриття без розчинників",
+         "lft": 37,
+         "rgt": 38,
+         "depth": 2
+         }
+      ]
+   },
+   {
+      "id": 7,
+      "slug": "zinc-coatings",
+      "name": "Цинкові",
+      "title": "Покриття, що містять цинк",
+      "lft": 40,
+      "rgt": 41,
+      "depth": 1,
+      "children": []
+   },
+   {
+      "id": 8,
+      "slug": "silicone-coatings",
+      "name": "Кремній-органічні покриття",
+      "title": "Кремній-органічні покриття",
+      "lft": 42,
+      "rgt": 43,
+      "depth": 1,
+      "children": []
+   },
+   {
+      "id": 9,
+      "slug": "water-borne-coatings",
+      "name": "На водній основі",
+      "title": "Покриття на водній основі",
+      "lft": 44,
+      "rgt": 45,
+      "depth": 1,
+      "children": []
+   },
+   {
+      "id": 10,
+      "slug": "others",
+      "name": "Інші",
+      "title": "Інші покриття",
+      "lft": 46,
+      "rgt": 47,
+      "depth": 1,
+      "children": []
+   },
+   {
+      "id": 11,
+      "slug": "thinners",
+      "name": "Розчинники",
+      "title": "Розчинники",
+      "lft": 48,
+      "rgt": 49,
+      "depth": 1,
+      "children": []
+   }
+]

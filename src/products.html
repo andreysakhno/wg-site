@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="uk">
+	@@include('html/_head.htm',{
+		"title":"Продукція"
+	})
+	<body>
+		<div class="wrapper">
+			@@include('html/_header.htm',{})
+			<main class="products-objects" data-products >				
+				<section class="products-objects__top products-objects-top">	
+					<div class="products-objects-top__container">
+						<h1 class="products-objects-top__title">Продукція</h1>
+						<div class="products-objects-top__search-form">
+								<input id="productsSearch" autocomplete="off" type="text" name="productsSearch" placeholder="Введіть назву продукту" class="products-objects-top__input">
+								<button type="submit" class="products-objects-top__button"></button>
+						</div>
+					</div>			
+				</section>				
+				<section class="products-objects__controls controls">
+					<div class="controls__container">
+						<button type="button" class="selected-filters__open-btn filters-btn">Фільтри</button>
+						<div data-da=".filters__main,991.98,0" data-filters-marks class="controls__left selected-filters"></div>
+						<div class="controls__right">
+							<span class="controls__sort-icon _icon-sort"></span>
+							<select name="form[]" data-class-modif="controls__sort-select" class="controls__sort-select">								
+								<option value="asc">від А до Я</option>
+								<option value="desc">від Я до А</option>
+							</select>
+						</div>
+					</div>
+				</section>
+				<section class="products-objects__main main">
+					<div class="main__container">
+						<div class="main__left filters">
+							<div class="filters__top">
+								<button class="filters__close filters-btn"><span class="_icon-close"></span></button>
+							</div>
+							<div class="filters__main" data-filters>								
+								<div data-spollers class="filters__spollers spollers">
+									<div class="spollers__item">
+										<button type="button" data-spoller class="spollers__title _spoller-active">Хімічна основа</button>
+										<div class="spollers__body">
+											<div data-filters-showmore="items" class="filters__categories categories">
+												<ul data-filters-showmore-content="10" data-filters-group="chemical" class="categories__content">
+													<li class="categories__checkbox checkbox"><input type="checkbox" id="chemical_0" name="form[chemical_0]" value="3"
+															class="checkbox__input"><label for="chemical_0" class="checkbox__label"><span
+																class="checkbox__text">Акрили</span></label></li>
+													<li class="categories__checkbox checkbox checkbox-second-level"><input type="checkbox" id="chemical_1"
+															name="form[chemical_1]" value="13" class="checkbox__input"><label for="chemical_1"
+															class="checkbox__label"><span class="checkbox__text">на основі розчинників</span></label></li>
+													<li class="categories__checkbox checkbox checkbox-second-level"><input type="checkbox" id="chemical_2"
+															name="form[chemical_2]" value="12" class="checkbox__input"><label for="chemical_2"
+															class="checkbox__label"><span class="checkbox__text">на водній основі</span></label></li>
+													<li class="categories__checkbox checkbox"><input type="checkbox" id="chemical_3" name="form[chemical_3]" value="2"
+															class="checkbox__input"><label for="chemical_3" class="checkbox__label"><span
+																class="checkbox__text">Алкіди</span></label></li>
+													<li class="categories__checkbox checkbox"><input type="checkbox" id="chemical_4" name="form[chemical_4]" value="4"
+															class="checkbox__input"><label for="chemical_4" class="checkbox__label"><span
+																class="checkbox__text">Епоксиди</span></label></li>
+													<li class="categories__checkbox checkbox checkbox-second-level"><input type="checkbox" id="chemical_5"
+															name="form[chemical_5]" value="20" class="checkbox__input"><label for="chemical_5"
+															class="checkbox__label"><span class="checkbox__text">поліаміди</span></label></li>
+													<li class="categories__checkbox checkbox checkbox-second-level"><input type="checkbox" id="chemical_6"
+															name="form[chemical_6]" value="21" class="checkbox__input"><label for="chemical_6"
+															class="checkbox__label"><span class="checkbox__text">модифіковані</span></label></li>
+													<li class="categories__checkbox checkbox checkbox-second-level"><input type="checkbox" id="chemical_7"
+															name="form[chemical_7]" value="14" class="checkbox__input"><label for="chemical_7"
+															class="checkbox__label"><span class="checkbox__text">novolac</span></label></li>
+													<li class="categories__checkbox checkbox checkbox-second-level"><input type="checkbox" id="chemical_8"
+															name="form[chemical_8]" value="16" class="checkbox__input"><label for="chemical_8"
+															class="checkbox__label"><span class="checkbox__text">без розчинників</span></label></li>
+													<li class="categories__checkbox checkbox checkbox-second-level"><input type="checkbox" id="chemical_9"
+															name="form[chemical_9]" value="15" class="checkbox__input"><label for="chemical_9"
+															class="checkbox__label"><span class="checkbox__text">полісульфіди</span></label></li>
+													<li class="categories__checkbox checkbox"><input type="checkbox" id="chemical_10" name="form[chemical_10]" value="5"
+															class="checkbox__input"><label for="chemical_10" class="checkbox__label"><span
+																class="checkbox__text">Поліуретани</span></label></li>
+													<li class="categories__checkbox checkbox checkbox-second-level"><input type="checkbox" id="chemical_11"
+															name="form[chemical_11]" value="17" class="checkbox__input"><label for="chemical_11"
+															class="checkbox__label"><span class="checkbox__text">1-о компонентні</span></label></li>
+													<li class="categories__checkbox checkbox checkbox-second-level"><input type="checkbox" id="chemical_12"
+															name="form[chemical_12]" value="18" class="checkbox__input"><label for="chemical_12"
+															class="checkbox__label"><span class="checkbox__text">2-о компонентні (модифіковані)</span></label></li>
+													<li class="categories__checkbox checkbox checkbox-second-level"><input type="checkbox" id="chemical_13"
+															name="form[chemical_13]" value="19" class="checkbox__input"><label for="chemical_13"
+															class="checkbox__label"><span class="checkbox__text">2-о компонентні (аліфатичні)</span></label></li>
+													<li class="categories__checkbox checkbox checkbox-second-level"><input type="checkbox" id="chemical_14"
+															name="form[chemical_14]" value="23" class="checkbox__input"><label for="chemical_14"
+															class="checkbox__label"><span class="checkbox__text">без розчинників</span></label></li>
+													<li class="categories__checkbox checkbox"><input type="checkbox" id="chemical_15" name="form[chemical_15]" value="6"
+															class="checkbox__input"><label for="chemical_15" class="checkbox__label"><span
+																class="checkbox__text">Товстошарові без розчинників</span></label></li>
+													<li class="categories__checkbox checkbox checkbox-second-level"><input type="checkbox" id="chemical_16"
+															name="form[chemical_16]" value="25" class="checkbox__input"><label for="chemical_16"
+															class="checkbox__label"><span class="checkbox__text">поліурея (polyurea)</span></label></li>
+													<li class="categories__checkbox checkbox checkbox-second-level"><input type="checkbox" id="chemical_17"
+															name="form[chemical_17]" value="22" class="checkbox__input"><label for="chemical_17"
+															class="checkbox__label"><span class="checkbox__text">поліуретани</span></label></li>
+													<li class="categories__checkbox checkbox checkbox-second-level"><input type="checkbox" id="chemical_18"
+															name="form[chemical_18]" value="24" class="checkbox__input"><label for="chemical_18"
+															class="checkbox__label"><span class="checkbox__text">епоксиди</span></label></li>
+													<li class="categories__checkbox checkbox"><input type="checkbox" id="chemical_19" name="form[chemical_19]" value="7"
+															class="checkbox__input"><label for="chemical_19" class="checkbox__label"><span
+																class="checkbox__text">Цинкові</span></label></li>
+													<li class="categories__checkbox checkbox"><input type="checkbox" id="chemical_20" name="form[chemical_20]" value="8"
+															class="checkbox__input"><label for="chemical_20" class="checkbox__label"><span
+																class="checkbox__text">Кремній-органічні покриття</span></label></li>
+													<li class="categories__checkbox checkbox"><input type="checkbox" id="chemical_21" name="form[chemical_21]" value="9"
+															class="checkbox__input"><label for="chemical_21" class="checkbox__label"><span class="checkbox__text">На водній
+																основі</span></label></li>
+													<li class="categories__checkbox checkbox"><input type="checkbox" id="chemical_22" name="form[chemical_22]" value="10"
+															class="checkbox__input"><label for="chemical_22" class="checkbox__label"><span
+																class="checkbox__text">Інші</span></label></li>
+													<li class="categories__checkbox checkbox"><input type="checkbox" id="chemical_23" name="form[chemical_23]" value="11"
+															class="checkbox__input"><label for="chemical_23" class="checkbox__label"><span
+																class="checkbox__text">Розчинники</span></label></li>
+												</ul>
+												<button hidden data-filters-showmore-button type="button" class="categories__more">
+													<span>Показати ще</span>
+													<span>Приховати</span>
+												</button>
+											</div>
+										</div>
+									</div>
+									<div class="spollers__item">
+										<button type="button" data-spoller class="spollers__title _spoller-active">Застосування</button>
+										<div class="spollers__body">
+											<div data-filters-showmore="items" class="filters__categories categories">
+												<ul data-filters-showmore-content="10" data-filters-group="applying" class="categories__content">
+													<li class="categories__checkbox checkbox"><input type="checkbox" id="applying_0" name="form[applying_0]" value="1"
+															class="checkbox__input"><label for="applying_0" class="checkbox__label"><span
+																class="checkbox__text">Межопераційні грунти</span><span class="checkbox__tip"
+																data-tippy-content="Призначені для нанесення в заводських умовах тонким шаром (15-20 мкм) з метою забезпечення тимчасового захисту сталевого прокату на період виробництва металоконструкцій (6-12 місяців) до нанесення основної грунтовки. Дозволяють різання та зварювання металу по ним."
+																data-placement="right">?</span></label></li>
+													<li class="categories__checkbox checkbox"><input type="checkbox" id="applying_1" name="form[applying_1]" value="2"
+															class="checkbox__input"><label for="applying_1" class="checkbox__label"><span
+																class="checkbox__text">Грунти</span><span class="checkbox__tip"
+																data-tippy-content="Наносяться першим шаром на підготовлену достатньо шорстку і чисту металеву поверхню і/або очищене старе покриття для створення первинного шару лакофарбового покриття, що забезпечує надійне адгезійне зчеплення верхніх шарів з поверхнею, що фарбується."
+																data-placement="right">?</span></label></li>
+													<li class="categories__checkbox checkbox"><input type="checkbox" id="applying_2" name="form[applying_2]" value="3"
+															class="checkbox__input"><label for="applying_2" class="checkbox__label"><span class="checkbox__text">Проміжні
+																покриття</span><span class="checkbox__tip"
+																data-tippy-content="Наносяться між грунтовкою і верхнім шаром. Як правило містить пігменти бар'єрного типу."
+																data-placement="right">?</span></label></li>
+													<li class="categories__checkbox checkbox"><input type="checkbox" id="applying_3" name="form[applying_3]" value="4"
+															class="checkbox__input"><label for="applying_3" class="checkbox__label"><span class="checkbox__text">Фінішні
+																покриття</span><span class="checkbox__tip"
+																data-tippy-content="Використовуються як останній шар системи покриттів. Призначені для захисту попередніх шарів  від навколишнього середовища, сприяють загальному антикорозійному захисту, і надають системі необхідний колір і декоративні властивості."
+																data-placement="right">?</span></label></li>
+													<li class="categories__checkbox checkbox"><input type="checkbox" id="applying_4" name="form[applying_4]" value="5"
+															class="checkbox__input"><label for="applying_4" class="checkbox__label"><span
+																class="checkbox__text">Грунт/фініш</span><span class="checkbox__tip"
+																data-tippy-content="Одночасно виконують функції і ґрунтовки, і оздоблювальної фарби."
+																data-placement="right">?</span></label></li>
+													<li class="categories__checkbox checkbox"><input type="checkbox" id="applying_5" name="form[applying_5]" value="6"
+															class="checkbox__input"><label for="applying_5" class="checkbox__label"><span
+																class="checkbox__text">Адгезиви</span><span class="checkbox__tip"
+																data-tippy-content="Призначені для покращення міжшарової адгезії, наприклад, до оцинкованої сталі, алюмінію, старих покриттів і т.п."
+																data-placement="right">?</span></label></li>
+													<li class="categories__checkbox checkbox"><input type="checkbox" id="applying_6" name="form[applying_6]" value="7"
+															class="checkbox__input"><label for="applying_6" class="checkbox__label"><span class="checkbox__text">Для
+																бетону</span><span class="checkbox__tip" data-tippy-content="Призначені для захисту бетонних поверхонь."
+																data-placement="right">?</span></label></li>
+													<li class="categories__checkbox checkbox"><input type="checkbox" id="applying_7" name="form[applying_7]" value="8"
+															class="checkbox__input"><label for="applying_7" class="checkbox__label"><span class="checkbox__text">Для
+																оцинкованих поверхонь</span></label></li>
+													<li class="categories__checkbox checkbox"><input type="checkbox" id="applying_8" name="form[applying_8]" value="9"
+															class="checkbox__input"><label for="applying_8" class="checkbox__label"><span class="checkbox__text">Толерантні
+																до підготовки поверхні</span><span class="checkbox__tip"
+																data-tippy-content="Застосовуються, де повне видалення іржі за допомогою абразивоструменевої обробки неможливо. Вони проникають крізь іржу безпосередньо до сталевої поверхні, ефективно запобігаючи подальшій корозії."
+																data-placement="right">?</span></label></li>
+													<li class="categories__checkbox checkbox"><input type="checkbox" id="applying_9" name="form[applying_9]" value="11"
+															class="checkbox__input"><label for="applying_9" class="checkbox__label"><span class="checkbox__text">Наносяться
+																при низьких температурах</span><span class="checkbox__tip"
+																data-tippy-content="Покриття, що наносяться при від'ємній температурі зовнішнього середовища"
+																data-placement="right">?</span></label></li>
+													<li class="categories__checkbox checkbox"><input type="checkbox" id="applying_10" name="form[applying_10]" value="10"
+															class="checkbox__input"><label for="applying_10" class="checkbox__label"><span class="checkbox__text">Ремонт
+																старих покриттів</span><span class="checkbox__tip"
+																data-tippy-content="За рахунок сумісності з багатьма видами фарб, покриття наносяться поверх існуючих покриттів з мінімальною підготовкою поверхні."
+																data-placement="right">?</span></label></li>
+													<li class="categories__checkbox checkbox"><input type="checkbox" id="applying_11" name="form[applying_11]" value="19"
+															class="checkbox__input"><label for="applying_11" class="checkbox__label"><span class="checkbox__text">Для
+																трубопроводів</span><span class="checkbox__tip"
+																data-tippy-content="Покриття для ізоляції підземних та підводних трубопроводів, а також для захисту внутрішніх поверхонь труб."
+																data-placement="right">?</span></label></li>
+													<li class="categories__checkbox checkbox"><input type="checkbox" id="applying_12" name="form[applying_12]" value="12"
+															class="checkbox__input"><label for="applying_12" class="checkbox__label"><span class="checkbox__text">Хімічно
+																стійкі</span><span class="checkbox__tip"
+																data-tippy-content="Покриття, що витримують повне хімічне занурення в промислові хімікати, такі як 98% сірчана кислота, гіпохлорит натрію, соляна кислота, гідроксид натрію, тощо."
+																data-placement="right">?</span></label></li>
+													<li class="categories__checkbox checkbox"><input type="checkbox" id="applying_13" name="form[applying_13]" value="13"
+															class="checkbox__input"><label for="applying_13" class="checkbox__label"><span
+																class="checkbox__text">Облицювання резервуарів</span><span class="checkbox__tip"
+																data-tippy-content="Покриття, що застосовуються для захисту внутрішніх поверхонь резервуарів зберігання нафти та нафтопродукті."
+																data-placement="right">?</span></label></li>
+													<li class="categories__checkbox checkbox"><input type="checkbox" id="applying_14" name="form[applying_14]" value="14"
+															class="checkbox__input"><label for="applying_14" class="checkbox__label"><span class="checkbox__text">Для
+																питної води</span><span class="checkbox__tip"
+																data-tippy-content="Покриття, що дозволені для застосування в контакті з питною водою"
+																data-placement="right">?</span></label></li>
+													<li class="categories__checkbox checkbox"><input type="checkbox" id="applying_15" name="form[applying_15]" value="15"
+															class="checkbox__input"><label for="applying_15" class="checkbox__label"><span
+																class="checkbox__text">Високотемпературні</span><span class="checkbox__tip"
+																data-tippy-content="Покриття, що витримують нагрів екстримально високих температур."
+																data-placement="right">?</span></label></li>
+													<li class="categories__checkbox checkbox"><input type="checkbox" id="applying_16" name="form[applying_16]" value="16"
+															class="checkbox__input"><label for="applying_16" class="checkbox__label"><span
+																class="checkbox__text">Абразивостійкі</span><span class="checkbox__tip"
+																data-tippy-content="Покриття, що витримують абразивний знос та удари."
+																data-placement="right">?</span></label></li>
+													<li class="categories__checkbox checkbox"><input type="checkbox" id="applying_17" name="form[applying_17]" value="17"
+															class="checkbox__input"><label for="applying_17" class="checkbox__label"><span class="checkbox__text">Корозія
+																під ізоляцією</span><span class="checkbox__tip"
+																data-tippy-content="Покриття, що захищають від корозія поверхні  під теплоізоляцією."
+																data-placement="right">?</span></label></li>
+													<li class="categories__checkbox checkbox"><input type="checkbox" id="applying_18" name="form[applying_18]" value="18"
+															class="checkbox__input"><label for="applying_18" class="checkbox__label"><span
+																class="checkbox__text">Гідроізоляція</span><span class="checkbox__tip"
+																data-tippy-content="Рідкі гідроізоляційні матеріали, що наносяться розпиленням або ручними інструментами"
+																data-placement="right">?</span></label></li>
+													<li class="categories__checkbox checkbox"><input type="checkbox" id="applying_19" name="form[applying_19]" value="20"
+															class="checkbox__input"><label for="applying_19" class="checkbox__label"><span class="checkbox__text">Для
+																захисту підлог</span></label></li>
+													<li class="categories__checkbox checkbox"><input type="checkbox" id="applying_20" name="form[applying_20]" value="21"
+															class="checkbox__input"><label for="applying_20" class="checkbox__label"><span
+																class="checkbox__text">Конструкції занурені в морську воду</span><span class="checkbox__tip"
+																data-tippy-content="Покриття для захисту конструкцій занурених в морську або солону воду, у тому числі у взаємодії з катодним захистом. Корозійна категорія Im1, Im2 та Im4 за ISO 12944."
+																data-placement="right">?</span></label></li>
+													<li class="categories__checkbox checkbox"><input type="checkbox" id="applying_21" name="form[applying_21]" value="22"
+															class="checkbox__input"><label for="applying_21" class="checkbox__label"><span
+																class="checkbox__text">Конструкції заглиблені в землю</span><span class="checkbox__tip"
+																data-tippy-content="Покриття для захисту конструкцій заглиблених в грунт, у тому числі у взаємодії з катодним захистом. Корозійна категорія Im3 за ISO 12944."
+																data-placement="right">?</span></label></li>
+													<li class="categories__checkbox checkbox"><input type="checkbox" id="applying_22" name="form[applying_22]" value="23"
+															class="checkbox__input"><label for="applying_22" class="checkbox__label"><span class="checkbox__text">Для
+																болтових з’єднань</span><span class="checkbox__tip"
+																data-tippy-content="Покриття, що мають високий коефіцієнт тертя і опір повзучості, тому допущенні для фарбування  контактних поверхонь болтових з’єднань."
+																data-placement="right">?</span></label></li>
+												</ul>
+
+												<button hidden data-filters-showmore-button type="button" class="categories__more">
+													<span>Показати ще</span>
+													<span>Приховати</span>
+												</button>
+											</div>
+										</div>
+									</div>
+									<div class="spollers__item">
+										<button type="button" data-spoller class="spollers__title _spoller-active">Сухий залишок</button>
+										<div class="spollers__body">
+											<div class="filters__categories categories">
+												<ul data-filters-group="vc" class="categories__content">
+													<li class="categories__checkbox checkbox"><input type="checkbox" id="vc_0" name="form[vc_0]" value="1"
+															class="checkbox__input"><label for="vc_0" class="checkbox__label"><span class="checkbox__text">Низький
+																(&lt;60%)</span></label></li>
+													<li class="categories__checkbox checkbox"><input type="checkbox" id="vc_1" name="form[vc_1]" value="2"
+															class="checkbox__input"><label for="vc_1" class="checkbox__label"><span class="checkbox__text">Середній
+																(60-70%)</span></label></li>
+													<li class="categories__checkbox checkbox"><input type="checkbox" id="vc_2" name="form[vc_2]" value="3"
+															class="checkbox__input"><label for="vc_2" class="checkbox__label"><span class="checkbox__text">Високий
+																(&gt;70%)</span></label></li>
+													<li class="categories__checkbox checkbox"><input type="checkbox" id="vc_3" name="form[vc_3]" value="4"
+															class="checkbox__input"><label for="vc_3" class="checkbox__label"><span class="checkbox__text">Без розчинників
+																(100%)</span></label></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>							
+							<div class="filters__bottom">
+								<button class="filters__reset">Скинути</button>
+								<button class="filters__apply">Застосувати</button>
+							</div>
+						</div>
+						<div data-search-result class="main__right">		
+							
+							<a href="#" class="main__card product-card">
+								<h4 class="product-card__title">Феррогальванік (Ferrogalvanic)</h4>
+								<div class="product-card__description">Однокомпонентная полиуретановая антикоррозийная грунтовка на основе
+									растворителя, отверждаемая влагой воздуха.</div>
+								<div class="product-card__categories">
+									<div class="product-card__category category-red">Поліуретанове покриття</div>
+									<div class="product-card__category category-blue">Захист бетону</div>
+									<div class="product-card__category category-blue">Фінішні покриття</div>
+									<div class="product-card__category category-blue">Фінішні покриття</div>
+									<div class="product-card__category category-blue">Фінішні покриття</div>
+								</div>
+								<div class="product-card__more more">
+									<span class="more__link">Детальніше</span>
+								</div>
+							</a>
+
+							<a href="#" class="main__card product-card">
+								<h4 class="product-card__title">Феррогальванік (Ferrogalvanic)</h4>
+								<div class="product-card__description">Однокомпонентная полиуретановая антикоррозийная грунтовка на основе
+									растворителя, отверждаемая влагой воздуха.</div>
+								<div class="product-card__categories">
+									<div class="product-card__category category-red">Поліуретанове покриття</div>
+									<div class="product-card__category category-blue">Захист бетону</div>
+									<div class="product-card__category category-blue">Фінішні покриття</div>
+									<div class="product-card__category category-blue">Фінішні покриття</div>
+									<div class="product-card__category category-blue">Фінішні покриття</div>
+								</div>
+								<div class="product-card__more more">
+									<span class="more__link">Детальніше</span>
+								</div>
+							</a>
+
+							<a href="#" class="main__card product-card">
+								<h4 class="product-card__title">Феррогальванік (Ferrogalvanic)</h4>
+								<div class="product-card__description">Однокомпонентная полиуретановая антикоррозийная грунтовка на основе
+									растворителя, отверждаемая влагой воздуха.</div>
+								<div class="product-card__categories">
+									<div class="product-card__category category-red">Поліуретанове покриття</div>
+									<div class="product-card__category category-blue">Захист бетону</div>
+									<div class="product-card__category category-blue">Фінішні покриття</div>
+									<div class="product-card__category category-blue">Фінішні покриття</div>
+									<div class="product-card__category category-blue">Фінішні покриття</div>
+								</div>
+								<div class="product-card__more more">
+									<span class="more__link">Детальніше</span>
+								</div>
+							</a>
+
+							<a href="#" class="main__card product-card">
+								<h4 class="product-card__title">Феррогальванік (Ferrogalvanic)</h4>
+								<div class="product-card__description">Однокомпонентная полиуретановая антикоррозийная грунтовка на основе
+									растворителя, отверждаемая влагой воздуха.</div>
+								<div class="product-card__categories">
+									<div class="product-card__category category-red">Поліуретанове покриття</div>
+									<div class="product-card__category category-blue">Захист бетону</div>
+									<div class="product-card__category category-blue">Фінішні покриття</div>
+									<div class="product-card__category category-blue">Фінішні покриття</div>
+									<div class="product-card__category category-blue">Фінішні покриття</div>
+								</div>
+								<div class="product-card__more more">
+									<span class="more__link">Детальніше</span>
+								</div>
+							</a>
+
+							<div class="pagging"></div>
+						</div>						
+					</div>
+				</section>
+				<div data-preloader class="products-objects__preloader preloader">
+					<div class="preloader__container">
+						<div class="preloader__circle"></div>
+					</div>					
+				</div>
+			</main>
+			@@include('html/_footer.htm',{})
+		</div>
+		@@include('html/_popup.htm',{})
+		@@include('html/_js.htm',{})
+	</body>
+</html>

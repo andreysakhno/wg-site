@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="uk">
+	@@include('html/_head.htm',{
+		"title":"Об'єкти"
+	})
+	<body>
+		<div class="wrapper">
+			@@include('html/_header.htm',{})
+			<main class="products-objects" data-objects >				
+				<section class="products-objects__top products-objects-top">	
+					<div class="products-objects-top__container">
+						<h1 class="products-objects-top__title">Об'єкти</h1>
+					</div>			
+				</section>				
+				<section class="products-objects__controls controls">
+					<div class="controls__container">
+						<button type="button" class="selected-filters__open-btn filters-btn">Фільтри</button>
+						<div data-da=".filters__main,991.98,0" data-filters-marks class="controls__left selected-filters"></div>
+						<div class="controls__right">
+							<span class="controls__sort-icon _icon-sort"></span>
+							<select name="form[]" data-class-modif="controls__sort-select" class="controls__sort-select">								
+								<option value="asc">від А до Я</option>
+								<option value="desc">від Я до А</option>
+							</select>
+						</div>
+					</div>
+				</section>
+				<section class="products-objects__main main">
+					<div class="main__container">
+						<div class="main__left filters">
+							<div class="filters__top">
+								<button class="filters__close filters-btn"><span class="_icon-close"></span></button>
+							</div>
+							<div class="filters__main" data-filters>								
+								<div data-spollers class="filters__spollers spollers">
+									<div class="spollers__item">
+										<button type="button" data-spoller class="spollers__title _spoller-active">Хімічна основа</button>
+										<div class="spollers__body">
+											<div data-filters-showmore="items" class="filters__categories categories">
+												<ul data-filters-showmore-content="10" data-filters-group="industry" class="categories__content">
+													<li class="categories__checkbox checkbox"><input type="checkbox" id="industry_0" name="form[industry_0]" value="1"
+															class="checkbox__input"><label for="industry_0" class="checkbox__label"><span
+																class="checkbox__text">Мости</span></label></li>
+																<li class="categories__checkbox checkbox"><input type="checkbox" id="industry_1" name="form[industry_1]" value="2"
+																		class="checkbox__input"><label for="industry_1" class="checkbox__label"><span class="checkbox__text">Нафтогазова
+																			галузь</span></label></li>
+														<li class="categories__checkbox checkbox"><input type="checkbox" id="industry_2" name="form[industry_2]" value="3"
+																class="checkbox__input"><label for="industry_2" class="checkbox__label"><span
+																	class="checkbox__text">Енергетика</span></label></li>
+														<li class="categories__checkbox checkbox"><input type="checkbox" id="industry_3" name="form[industry_3]" value="4"
+																class="checkbox__input"><label for="industry_3" class="checkbox__label"><span class="checkbox__text">Морські
+																	платформи</span></label></li>
+														<li class="categories__checkbox checkbox"><input type="checkbox" id="industry_4" name="form[industry_4]" value="5"
+																class="checkbox__input"><label for="industry_4" class="checkbox__label"><span
+																	class="checkbox__text">Водоканал</span></label></li>
+														<li class="categories__checkbox checkbox"><input type="checkbox" id="industry_5" name="form[industry_5]" value="6"
+																class="checkbox__input"><label for="industry_5" class="checkbox__label"><span
+																	class="checkbox__text">Резервуари</span></label></li>
+												</ul>
+												<button hidden data-filters-showmore-button type="button" class="categories__more">
+													<span>Показати ще</span>
+													<span>Приховати</span>
+												</button>
+											</div>
+										</div>
+									</div>
+									<div class="spollers__item">
+										<button type="button" data-spoller class="spollers__title _spoller-active">Застосування</button>
+										<div class="spollers__body">
+											<div data-filters-showmore="items" class="filters__categories categories">
+												<ul data-filters-showmore-content="10" data-filters-group="surface" class="categories__content"
+													style="overflow: hidden; height: 34px;">
+													<li class="categories__checkbox checkbox"><input type="checkbox" id="surface_0" name="form[surface_0]" value="1"
+															class="checkbox__input"><label for="surface_0" class="checkbox__label"><span class="checkbox__text">Металеві
+																поверхні</span></label></li>
+													<li class="categories__checkbox checkbox"><input type="checkbox" id="surface_1" name="form[surface_1]" value="2"
+															class="checkbox__input"><label for="surface_1" class="checkbox__label"><span class="checkbox__text">Бетонні
+																поверхні</span></label></li>
+												</ul>
+												<button hidden data-filters-showmore-button type="button" class="categories__more">
+													<span>Показати ще</span>
+													<span>Приховати</span>
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>							
+							<div class="filters__bottom">
+								<button class="filters__reset">Скинути</button>
+								<button class="filters__apply">Застосувати</button>
+							</div>
+						</div>
+						<div data-search-result class="main__right">	
+							
+							<a href="#" class="main__card primary-card-gorizontal objects-card">
+								<div class="primary-card-gorizontal__image-ibg">
+									<img src="@img/solution/photo1.jpg" alt="Weleforce PW епоксидне покриття для питної води">
+								</div>
+								<div class="primary-card-gorizontal__body">
+									<div class="primary-card-gorizontal__article">
+										<h4 class="primary-card-gorizontal__title">Weleforce PW епоксидне покриття для питної води.</h4>
+										
+										<div class="primary-card-gorizontal__info">
+											<div class="primary-card-gorizontal__item">
+												<span class="primary-card-gorizontal__lable">Розташування:</span>
+												<span class="primary-card-gorizontal__data">Україна, Київ</span>
+											</div>
+											<div class="primary-card-gorizontal__item">
+												<span class="primary-card-gorizontal__lable">Рік:</span>
+												<span class="primary-card-gorizontal__data">2020</span>
+											</div>
+										</div>
+
+										<div class="primary-card-gorizontal__categories">
+											<div class="primary-card-gorizontal__category category-red">Поліуретанове покриття</div>
+											<div class="primary-card-gorizontal__category category-blue">Захист бетону</div>
+											<div class="primary-card-gorizontal__category category-blue">Фінішні покриття</div>
+										</div>
+
+									</div>
+									<div class="primary-card-gorizontal__more more">
+										<span class="more__link small-link">Детальніше</span>
+									</div>
+								</div>
+							</a>
+							
+							<a href="#" class="main__card primary-card-gorizontal objects-card">
+								<div class="primary-card-gorizontal__no-photo">
+									<img src="@img/svg/icon-no-photo.svg" alt="Weleforce PW епоксидне покриття для питної води.">
+								</div>
+								<div class="primary-card-gorizontal__body">
+									<div class="primary-card-gorizontal__article">
+										<h4 class="primary-card-gorizontal__title">Weleforce PW епоксидне покриття для питної води.</h4>
+
+										<div class="primary-card-gorizontal__info">
+											<div class="primary-card-gorizontal__item">
+												<span class="primary-card-gorizontal__lable">Розташування:</span>
+												<span class="primary-card-gorizontal__data">Україна, Київ</span>
+											</div>
+											<div class="primary-card-gorizontal__item">
+												<span class="primary-card-gorizontal__lable">Рік:</span>
+												<span class="primary-card-gorizontal__data">2020</span>
+											</div>
+										</div>
+
+										<div class="primary-card-gorizontal__categories">
+											<div class="primary-card-gorizontal__category category-red">Поліуретанове покриття</div>
+											<div class="primary-card-gorizontal__category category-blue">Захист бетону</div>
+											<div class="primary-card-gorizontal__category category-blue">Фінішні покриття</div>
+										</div>
+
+									</div>
+									<div class="primary-card-gorizontal__more more">
+										<span class="more__link small-link">Детальніше</span>
+									</div>
+								</div>
+							</a>
+							
+							<div class="pagging"></div>
+						</div>						
+					</div>
+				</section>
+				<div data-preloader class="products-objects__preloader preloader">
+					<div class="preloader__container">
+						<div class="preloader__circle"></div>
+					</div>					
+				</div>
+			</main>
+			@@include('html/_footer.htm',{})
+		</div>
+		@@include('html/_popup.htm',{})
+		@@include('html/_js.htm',{})
+	</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="uk">
+	@@include('html/_head.htm',{
+		"title":"Компанія Велесгард"
+	})
+	<body>
+		<div class="wrapper">
+			@@include('html/_header.htm',{})
+			<main class="company">	
+				@@include('html/company/_company-header.htm', {
+					"title":"Контакти"
+				})
+				<section class="company__contacts contacts">
+					<div class="contacts__container">
+						<h4 class="contacts__title">ТОВ «Велесгард»</h4>
+						<div class="contacts__body">						
+							<div class="contacts__main-contacts">		
+								<ul class="contacts__list">
+									<li class="contacts__item">
+										<a href="https://goo.gl/maps/5TSmfEc88mJpP12G8" class="contacts__link" target="_blank">
+											<div class="contacts__icon _icon-location"></div>04074, Київ, вул. Коноплянська, 12
+										</a>
+									</li>
+									<li class="contacts__item">
+										<a href="tel:380444861108" class="contacts__link">
+											<span class="contacts__icon _icon-phone"></span>+38 (044) 486-11-08
+										</a>
+									</li>
+									<li class="contacts__item">
+										<a href="mailto:office@welesgard.com" class="contacts__link">
+											<span class="contacts__icon _icon-email"></span>office@welesgard.com
+										</a>								
+									</li>
+								</ul>
+							</div>
+							<div class="contacts__mail-contacts">
+								<div class="contacts__mail-contacts-title">Адреса для листування:</div>
+								<div class="contacts__mail-contacts-value">01021, Київ, вул. Михайла Грушевського, 28/2, нп. 43</div>
+							</div>
+						</div>						
+						<div class="contacts__form form-contacts">
+							<h4 class="form-contacts__title">Зворотній з’вязок</h4>
+							<form data-goto-error action="" method="post">
+								<div class="form-contacts__inputs">
+									<div class="form-contacts__item">
+										<label for="name" class="form-contacts__label">І’мя</label>
+										<input autocomplete="off" type="text" name="form[]" id="name" data-validate data-required data-error="Заповніть обов’язкове поле" placeholder="Введіть ваше і’мя" class="form-contacts__input">
+									</div>	
+									<div class="form-contacts__item">
+										<label for="email" class="form-contacts__label">Електронна адреса</label>
+										<input autocomplete="off" type="text" name="form[]" id="email" data-validate data-required="email" data-error="Невірна електронна адреса" placeholder="Введіть вашу електронну адресу" class="form-contacts__input">										
+									</div>
+									<div class="form-contacts__item">
+										<label for="company_name" class="form-contacts__label">Назва компанії</label>
+										<input autocomplete="off" type="text" name="form[]" id="company_name" data-error="Ошибка" placeholder="Введіть назву вашої компанії" class="form-contacts__input">
+									</div>
+									<div class="form-contacts__item">
+										<label for="subject" class="form-contacts__label">Тема повідомлення</label>
+										<input autocomplete="off" type="text" name="form[]" id="subject" data-validate data-required data-error="Заповніть обов’язкове поле" data-error="Ошибка" placeholder="Введіть тему повідомлення" class="form-contacts__input">
+									</div>
+								</div>
+								<div class="form-contacts__item">
+									<label for="message" class="form-contacts__label">Повідомлення</label>
+									<textarea autocomplete="off" name="form[]" id="message" data-validate data-required data-error="Заповніть обов’язкове поле" placeholder="Напишіть повідомлення" data-error="Ошибка" data-autoheight data-autoheight-min="200"  class="form-contacts__textarea"></textarea>
+								</div>
+								<button type="submit" class="form-contacts__btn primary-btn">Відправити</button>
+							</form>
+						</div>
+					</div>					
+				</section>	
+			</main>
+			@@include('html/_footer.htm',{})
+		</div>
+		@@include('html/_popup.htm',{})
+		@@include('html/_js.htm',{})
+	</body>
+</html>

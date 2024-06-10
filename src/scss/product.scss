@@ -1,0 +1,183 @@
+.one-product {
+   // .one-product__top
+   &__top {}
+   // .one-product__main
+   &__main {}
+}
+
+.one-product-main {
+   @include adaptiveValue("padding-bottom", 70, 50);
+   // .one-product-main__container
+   &__container {  
+      display: grid;
+      grid-template-columns: 1fr;
+      row-gap: rem(60);  
+      @include adaptiveValue("column-gap", 30, 20);
+      @media (min-width:$tablet) {         
+         grid-template-columns: 1fr percent(500, 1440);  
+      }         
+   }
+   // .one-product-main__left
+   &__left {
+      order: 2;
+      @media (min-width:$tablet) {         
+         order: 1;
+      }
+   }
+   // .one-product-main__right
+   &__right {     
+      border-radius: rem(20);
+      overflow: hidden;
+      background-color: $bgColorBlue;
+      padding: rem(25) rem(20);
+      order: 1;
+      @media (min-width:$tablet) {         
+         order: 2;
+         position: sticky;
+         top: rem(20);
+         align-self: start;
+      }
+   }
+}
+
+.product-info {
+   @include adaptiveValue("font-size", 18, 16);
+   line-height: math.div(22, 18);
+   // .product-info__group
+   &__group {
+      &:not(:last-child) {
+         @include adaptiveValue("margin-bottom", 50, 30);
+      }
+      p {
+         &:not(:last-child) {
+            margin-bottom: rem(10);
+         }
+      }
+   }
+   // .product-info__description
+   &__description {
+      &:not(:last-child) {
+         margin-bottom: rem(10);
+      }
+      h6, h5, h4, h3 {
+         font-weight: 700;
+         &:not(:last-child) {
+            margin-bottom: rem(10);
+         }
+      }
+      ul {
+         &:not(:last-child) {
+            margin-bottom: rem(10);
+         }
+         li {
+            position: relative;
+            padding: 0 0 0 rem(25);
+            &:not(:last-child) {
+               margin-bottom: rem(2);
+            }
+            &::before {
+               content: "";
+               position: absolute;
+               left: 0;
+               top: 8px;
+               width: rem(7);
+               height: rem(7);
+               background-color: $accentColorRed;
+            }
+         }
+      }
+   }
+   // .product-info__title
+   &__title {
+      font-weight: 700;
+      @include adaptiveValue("font-size", 20, 18);
+      color: $accentColorRed;
+      &:not(:last-child) {
+         @include adaptiveValue("margin-bottom", 20, 15);
+      }
+   }
+   // .product-info__tags
+   &__tags {      
+      display: flex;
+      align-items: center;
+      gap: rem(10);
+      flex-wrap: wrap;
+      justify-content: flex-start;
+   }
+   // .product-info__tag
+   &__tag {
+      padding: rem(5) rem(12) rem(5) rem(12);
+      @include adaptiveValue("font-size", 16, 14);
+      line-height: math.div(18, 16);
+      border-radius: 7px;
+      background-color:  rgba(242, 247, 254, 1);
+      overflow: hidden;   
+      @media (any-hover: hover){
+         &:hover{
+            background-color: rgba(242, 247, 254, 0.5);
+            color: $accentColorRed;
+         }
+      }     
+   }
+   // .product-info__characteristic
+   &__characteristic {
+      table {
+         width: 100%;      
+         border-collapse: collapse;
+         overflow-y: scroll;
+         &:not(:last-child) {
+            @include adaptiveValue("margin-bottom", 30, 25);
+         }
+      }
+      tr:nth-child(even) {
+         background: $bgColorGrey; 
+      } 
+      td {
+         border: 1px dashed #afafaf;
+         @include adaptiveValue("padding", 7, 5);
+         width: 50%;
+      }
+      td:nth-child(even) {
+         text-align: right;
+      }
+   }
+   // .product-info__characteristic-title
+   &__characteristic-title {
+      font-weight: 700;
+      &:not(:last-child) {
+         margin-bottom: rem(10);
+      }
+   }
+   // .product-info__related-products
+   &__related-products {}
+}
+
+.related-products {
+   display: grid;
+   grid-template-columns: 1fr;
+   @media (min-width:$mobileSmall){
+      grid-template-columns: repeat(auto-fill, minmax(rem(320), 1fr));
+   }   
+   gap: rem(20);
+   // .related-products__item
+   &__item {     
+      .primary-card__body {        
+         gap: rem(25);
+      }
+      .primary-card__title {
+         @include adaptiveValue("font-size", 18, 16);
+         line-height: math.div(22, 18);
+         &:not(:last-child) {
+            margin-bottom: rem(10);
+         }
+      }
+      .primary-card__text {
+         @include adaptiveValue("font-size", 18, 16);
+         line-height: math.div(22, 18);
+      }
+      .more__link {
+         @include adaptiveValue("font-size", 18, 16);
+      }
+   }
+}
+

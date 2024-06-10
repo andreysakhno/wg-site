@@ -1,0 +1,99 @@
+{
+  "objects": [
+    {
+      "id": 3,
+      "slug": "darnytsa-bridge",
+      "name": "Дарницький міст2",
+      "title": "Дарницький міст",
+      "country": "",
+      "city": "Київ",
+      "year_start": 2008,
+      "year_finished": 2010,
+      "photo": {
+        "src": "/img/svg/icon-no-photo.svg",
+        "srcset": ""
+      },
+      "industry": {
+        "id": 4,
+        "name": "Морські платформи",
+        "title": "Морські платформи"
+      },
+      "surface": [
+        {
+          "id": 2,
+          "name": "Бетонні поверхні",
+          "title": "Бетонні поверхні"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "slug": "mist",
+      "name": "Міст у Трубіжі",
+      "title": "Міст у Трубіжі",
+      "country": "Україна",
+      "city": "Київ",
+      "year_start": 2005,
+      "year_finished": 2010,
+      "photo": {
+        "src": "http://static.welesgard.test/cache/objects/2/thumb_4.jpg",
+        "srcset": "http://static.welesgard.test/cache/objects/2/thumb_4.webp"
+      },
+      "industry": {
+        "id": 4,
+        "name": "Морські платформи",
+        "title": "Морські платформи"
+      },
+      "surface": [
+        {
+          "id": 1,
+          "name": "Металеві поверхні",
+          "title": "Металеві поверхні"
+        },
+        {
+          "id": 2,
+          "name": "Бетонні поверхні",
+          "title": "Бетонні поверхні"
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "slug": "truboprovody",
+      "name": "Трубопроводи",
+      "title": "Трубопроводи",
+      "country": "Україна",
+      "city": "",
+      "year_start": 2021,
+      "year_finished": 2022,
+      "photo": {
+        "src": "http://static.welesgard.test/cache/objects/1/thumb_1.jpg",
+        "srcset": "http://static.welesgard.test/cache/objects/1/thumb_1.webp"
+      },
+      "industry": {
+        "id": 2,
+        "name": "Нафтогазова галузь",
+        "title": "Нафтогазова галузь"
+      },
+      "surface": [
+        {
+          "id": 1,
+          "name": "Металеві поверхні",
+          "title": "Металеві поверхні"
+        },
+        {
+          "id": 2,
+          "name": "Бетонні поверхні",
+          "title": "Бетонні поверхні"
+        }
+      ]
+    }
+  ],
+  "totalCount": 3,
+  "itemsPerPage": 10,
+  "currentPage": 1,
+  "filters": {
+    "industryIds": [2, 4],
+    "surfaceIds": [1, 2]
+  }
+}

@@ -1,0 +1,44 @@
+[
+    {
+      "id": 1,
+      "slug": "mosty",
+      "name": "Мости",
+      "title": "Мости",
+      "description": ""
+    },
+    {
+      "id": 2,
+      "slug": "naftogazova-galuz",
+      "name": "Нафтогазова галузь",
+      "title": "Нафтогазова галузь",
+      "description": ""
+    },
+    {
+      "id": 3,
+      "slug": "energetyka",
+      "name": "Енергетика",
+      "title": "Енергетика",
+      "description": ""
+    },
+    {
+      "id": 4,
+      "slug": "morski-platformy",
+      "name": "Морські платформи",
+      "title": "Морські платформи",
+      "description": ""
+    },
+    {
+      "id": 5,
+      "slug": "vodokanal",
+      "name": "Водоканал",
+      "title": "Водоканал",
+      "description": ""
+    },
+    {
+      "id": 6,
+      "slug": "reservuary",
+      "name": "Резервуари",
+      "title": "Резервуари",
+      "description": ""
+    }
+]

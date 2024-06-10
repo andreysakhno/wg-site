@@ -1,0 +1,16 @@
+[
+    {
+      "id": 1,
+      "slug": "metalevi-poverhni",
+      "name": "Металеві поверхні",
+      "title": "Металеві поверхні",
+      "description": ""
+    },
+    {
+      "id": 2,
+      "slug": "betonni-poverhni",
+      "name": "Бетонні поверхні",
+      "title": "Бетонні поверхні",
+      "description": ""
+    }
+]

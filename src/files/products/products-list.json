@@ -1,0 +1,9 @@
+[
+   { "id": 1, "name_ukr": "Велпраймер", "name_eng": "Welprimer"},
+   { "id": 2, "name_ukr": "Велкавер", "name_eng": "Welcover"},
+   { "id": 3, "name_ukr": "Велпраймер ECO", "name_eng": "Welprimer ECO"},
+   { "id": 4, "name_ukr": "Велкавер ECO", "name_eng": "Welcover ECO"},
+   { "id": 5, "name_ukr": "Велпраймер BF", "name_eng": "Welprimer BF"},
+   { "id": 6, "name_ukr": "Феррогальванік", "name_eng": "Ferrogalvanic"},
+   { "id": 7, "name_ukr": "Феррогальванік 2K", "name_eng": "Ferrogalvanic 2K"}
+]

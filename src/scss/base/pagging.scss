@@ -1,0 +1,147 @@
+.pagging {
+	display: flex;
+	align-items: center;	
+	justify-content: space-around;
+	@media (min-width:$mobile) {
+		justify-content: center;
+		column-gap: rem(15);
+	}
+	// .pagging__arrow
+	&__arrow {		
+		display: flex;
+      justify-content:center;
+      align-items: center;  
+		min-height: rem(90);
+		min-width: rem(90);
+		border-radius: 50%;
+      transition: all 0.3s ease 0s;
+		border: 2px solid $mainColor;
+		cursor: pointer;
+		color: $mainColor;   
+		@media (min-width:$mobile) {
+			min-height: rem(40);
+			min-width: rem(40);	
+		}
+      @media (any-hover: hover) {
+         &:hover {            
+				border: 2px solid $accentColorRed;
+				color: $accentColorRed;
+         }						
+      }		
+		&.pagging-prev {
+			transform: rotate(180deg);
+		}		
+		& span{
+			font-size: rem(18);			
+			transform: translateX(2px);
+		}
+	}
+	// .pagging__list
+	&__list {
+		display: none;
+		@media (min-width:$mobile){			
+			display: flex;
+		}
+		span.pagging__item {
+			cursor: not-allowed;
+		}
+	}
+	// .pagging__item
+	&__item {
+		font-weight: 700;
+		@include adaptiveValue("font-size", 22, 16);
+		padding: rem(10);
+		transition: color 0.3s ease 0s;
+		&._active {
+			color: $accentColorRed;
+		}
+		@media (any-hover: hover){
+			&:hover{
+				color: $accentColorRed;
+			}
+		}		
+	}	
+}
+
+//========================================================================================================================================================
+// pagination 
+//========================================================================================================================================================
+
+.pagination {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	@media (min-width:$mobile) {
+		justify-content: center;
+		column-gap: rem(15);
+	}
+	li {		
+		font-weight: 700;
+		@include adaptiveValue("font-size", 22, 16);
+		padding: rem(10);
+		transition: color 0.3s ease 0s;
+
+		&.active {
+			color: $accentColorRed;
+		}
+
+		@media (any-hover: hover) {
+			&:hover {
+				color: $accentColorRed;
+			}
+		}
+
+		&.prev>a, &.next>a {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-size: rem(18);
+			min-height: rem(90);
+			min-width: rem(90);
+			border-radius: 50%;
+			transition: all 0.3s ease 0s;
+			border: 2px solid $mainColor;
+			cursor: pointer;		
+			@media (min-width:$mobile) {
+				min-height: rem(40);
+				min-width: rem(40);
+			}
+			@media (any-hover: hover) {
+				&:hover {
+					border: 2px solid $accentColorRed;
+					color: $accentColorRed;
+					&::before{
+						color: $accentColorRed;
+					}
+				}
+			}			
+		}
+
+		&.prev>a::before, &.next>a::before {
+			content: "\e900";
+			@extend %ic;
+			display: block;
+			color: $mainColor;
+			transition: all 0.3s ease 0s;
+		}
+
+		&.prev>a::before {
+			transform: rotate(180deg) translateX(2px);
+		}
+
+		&.next>a::before {
+			transform: translateX(2px);
+		}
+
+		&.page {
+			@media (max-width:$mobile) {
+				display: none;
+			}
+		}
+
+		&.disabled {
+			display: none;
+		}
+	}
+}
+

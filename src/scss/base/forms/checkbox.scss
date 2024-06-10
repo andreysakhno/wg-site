@@ -1,0 +1,68 @@
+.checkbox {
+	position: relative;
+	&:not(:last-child) {
+		margin-bottom: 15px;
+	}
+	// .checkbox__input
+	&__input {
+		position: absolute;
+		width: 0;
+		height: 0;
+		opacity: 0;		
+		&:focus + .checkbox__label:before {
+			background: rgba(207, 51, 57, 0.2);
+		}		
+		&:checked + .checkbox__label:before {			
+			background: $accentColorRed url('@img/svg/checkmark.svg') no-repeat center / 75%;			
+		}
+		&:disabled + .checkbox__label:before {
+			background-color: #9B9B9B;
+		}
+	}
+	// .checkbox__label
+	&__label {
+		cursor: pointer;
+		display: flex;		
+		align-items: center;
+		position: relative;
+		gap: 10px;
+		&:before {
+			content: "";	
+			text-align: center;		
+			font-size: rem(12);
+			flex: 0 0 rem(20);
+			width: rem(20);
+			height: rem(20);
+			border-radius: rem(5);		
+			background-color: #D9D9D9;			
+		}	
+		@media (any-hover: hover) {
+			&:hover {
+				color: $accentColorRed;
+				&::before{
+					content:'';
+					background: rgba(207, 51, 57, 0.5);
+				}
+			}
+		}
+	}
+	// .checkbox__text
+	&__text {	
+		flex: 0 1 100%;
+		@include adaptiveValue("font-size", 18, 16);
+	}
+	// .checkbox__tip
+	&__tip {
+		flex: 0 0 rem(15);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: rem(10);
+		font-weight: 700;
+		color: #fff;
+		width: rem(15);
+		height: rem(15);
+		border-radius: 50%;
+		background-color: $accentColorRed;		
+	}
+}

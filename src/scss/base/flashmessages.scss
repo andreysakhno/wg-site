@@ -1,0 +1,92 @@
+.flash-messages {
+   font-size: rem(16);
+   line-height: math.div(22, 18);
+   position: fixed;   
+   top: 0;
+   right: 0;
+   min-height: 0;
+   z-index: 2;
+   width: rem(500);
+   padding: rem(20) rem(20);         
+   display: flex;
+   flex-direction: column;   
+
+   @media (max-width:$mobile) {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: rem(15) rem(10);
+   }
+
+   &__item {
+      display: grid;
+      column-gap: rem(15);
+      grid-template-columns: 1fr auto; 
+      padding: rem(15) rem(10);
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+      color: white;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 3s ease 0s;       
+      &:not(:last-child) {
+         margin-bottom: rem(15);
+      }
+      &.error {
+         background-color: red;
+      }
+      &.success {
+         background-color: green;
+      }
+      &.info {
+         background-color: dodgerblue;
+      }
+      &.warning {
+         background-color: gold;
+         color: black;
+      }
+      &.fadeout {
+         opacity: 0;
+         visibility: hidden;
+      }  
+      &.fadein {
+         opacity: 1;
+         visibility: visible; 
+      }     
+   }
+   &__text {
+      display: flex;
+      align-items: center;
+   }
+   &__close {
+      text-align: right;
+      padding: rem(7);
+   }
+}
+
+@keyframes fade-in {
+   0% {
+      opacity: 0;
+      visibility: hidden;
+   }
+   100% {
+      opacity: 1;
+      visibility: visible;
+   }
+}
+
+@keyframes fade-out {
+   0% {
+      opacity: 1;
+   }
+   100% {
+      opacity: 0;
+   }
+}
+
+
+
+
+

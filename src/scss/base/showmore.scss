@@ -1,0 +1,29 @@
+[data-showmore] {}
+
+[data-showmore-content] {
+	li:last-child{
+		margin-bottom: 15px;
+	}
+}
+
+[data-showmore-button] {
+	padding-top: rem(10);
+	span {
+		color: $accentColorRed;
+		font-size: rem(14);
+		&:last-child {
+			display: none;
+		}
+		@media (any-hover: hover){
+			&:hover{
+				text-decoration: underline;
+			}
+		}
+		._showmore-active & {
+			display: none;
+			&:last-child {
+				display: block;
+			}
+		}
+	}
+}
